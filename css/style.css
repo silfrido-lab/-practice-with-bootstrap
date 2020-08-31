@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff3f3;
+}
+
+.menu {
+    /* border: 1px solid red; */
+}
+
+.menu ul {
+    padding: 0;
+}
+
+.menu ul a {
+    /* border: 1px solid red; */
+    font-size: 14px;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.logo {
+    color: violet;
+    font-size: 3.5em;
+}
+
+.hambuerger-btn {
+    z-index: 101;
+    height: 45px;
+    width: 45px;
+    display: grid;
+    place-items: center;
+    font-size: 1.5em;
+    background: transparent;
+    border: none;
+    color: violet;
+    outline: none;
+    display: block;
+}
+
+.menu {
+    background: #000000bf;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: 100;
+    transform: translateY(-800px);
+    transition: all .5s;
+    display: grid !important;
+}
+
+.menu.active {
+    transform: translateY(0);
+}
+
+.menu ul {
+    display: grid !important;
+    place-items: center;
+}
+
+.menu ul li a {
+    color: violet;
+    font-size: 1.2em;
+    padding: 10px;
+    /* border: 1px solid red; */
+    cursor: pointer;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+.menu ul li:hover {
+    transform: scale(2);
+}
+
+.menu ul li a:hover {
+    color: white;
+}
+
+.hero-image {
+    order: 1;
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 450px;
+}
+
+.hero-image .button {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    font-size: 1.1em;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    color: black;
+    background: white;
+    font-weight: bold;
+}
+
+.hero-image .button i {
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.hero-content span {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 2em;
+    /* border: 1px solid red; */
+}
+
+.hero-content h1 {
+    color: violet;
+    font-weight: 900;
+    /* border: 1px solid red; */
+    margin: .2em 0 .2em 0;
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    /* border: 1px solid red; */
+}
+
+button:focus {
+    outline: none;
+    /* outline: 5px auto -webkit-focus-ring-color; */
+}
+
+
+/* hero */
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+section {
+    margin-top: 3rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.card p {
+    font-weight: bold;
+    padding: 15px;
+    font-size: 1.3em;
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+}
+
+
+/* company */
+
+.company-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+.company-content i {
+    font-size: 2em;
+    margin-top: 0.5em;
+}
+
+.company-content p {
+    font-weight: bold;
+    margin-top: 0.5em;
+    /* border: 1px solid red; */
+    letter-spacing: 2px;
+}
+
+
+/* especialitation */
+
+.specialitation-text p {
+    position: relative;
+    padding-left: 20px;
+    /* border: 1px solid red; */
+    display: inline-block;
+}
+
+.specialitation-text p::before {
+    content: '';
+    width: 10px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+}
+
+
+/* 
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 18em);
+    grid-gap: 1em;
+    /* padding: 10px; 
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin: 1em;
+    scroll-snap-type: both mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    width: 18em;
+    height: 18em;
+    scroll-snap-align: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 1em;
+        margin: 0 auto;
+        max-width: 1111px;
+    }
+} */
